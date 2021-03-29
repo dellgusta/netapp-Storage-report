@@ -16,10 +16,8 @@ Requirements:
   TEMPDIR=<dir of a tmp folder>
   STORAGELISTPATH=<path of storage_list file created above>
   ```
-  and also:
+  And also:
   ```
-  VFILERLISTPATH=/home/gsilva10/tmp/"$storage"
-  REPORTPATH=<dir of your report folder, make sure you keep the storage variable ahead or change the variable in for loop opening as well> /"$storage"_Report.txt
+  REPORTPATH=*<dir of your report folder, make sure you keep the storage variable ahead or change the variable in for loop opening as well>* /**"$storage"**_Report.txt
   ```
- 
-- The main script should have execution permission: *$sudo chmod +x <script>* should do the magic.
+- The main script should have execution permission: ```$sudo chmod +x <script>``` should do the magic.
