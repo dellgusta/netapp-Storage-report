@@ -7,5 +7,19 @@ Requirements:
 - Authless ssh connection configured between DFM Linux server and your Storage devices;
 - storage_list file:
   -  TXT based file. Each line should contain a Storage device you want to collect information from. It can be the hostname or IP, depending on your "hosts" file;
-- Same directory structure as seen in this repository. Both "tmp" and "report" should exist where the script is being executed.
+- Edit this part of the script to match your environment:
+  ```
+  #DECLARANDO VARIAVEIS
+  SSH=/usr/bin/ssh
+  ECHO=/bin/echo
+  ECHOSPACE="echo """
+  TEMPDIR=<dir of a tmp folder>
+  STORAGELISTPATH=<path of storage_list file created above>
+  ```
+  and also:
+  ```
+  VFILERLISTPATH=/home/gsilva10/tmp/"$storage"
+  REPORTPATH=<dir of your report folder, make sure you keep the storage variable ahead or change the variable in for loop opening as well> /"$storage"_Report.txt
+  ```
+ 
 - The main script should have execution permission: *$sudo chmod +x <script>* should do the magic.
