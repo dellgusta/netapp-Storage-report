@@ -18,6 +18,6 @@ Requirements:
   ```
   And also:
   ```
-  REPORTPATH=*<dir of your report folder, make sure you keep the storage variable ahead or change the variable in for loop opening as well>* /**"$storage"**_Report.txt
+  REPORTPATH=<dir of your report folder, make sure you keep the storage variable ahead or change the variable in for loop opening as well> /"$storage"_Report.txt
   ```
 - The main script should have execution permission: ```$sudo chmod +x <script>``` should do the magic.
