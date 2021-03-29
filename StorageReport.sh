@@ -11,14 +11,15 @@
 SSH=/usr/bin/ssh
 ECHO=/bin/echo
 ECHOSPACE="echo """
-TEMPDIR=/home/gsilva10/tmp
-STORAGELISTPATH=/home/gsilva10/Storage_list
+TEMPDIR=/home/<USER>/tmp
+STORAGELISTPATH=/home/<USER>/<STORAGE_LIST>
+#REPORTPATH=/home/<USER>/report/"$storage"_Report.txt -> Defined below inside for loop
 
 #FOR PARA COLETA DE INFORMAÇÕES E ARMAZENAMENTO EM ARQUIVO TXT
 for storage in `cat "$STORAGELISTPATH"`;
 do
-		VFILERLISTPATH=/home/gsilva10/tmp/"$storage"
-		REPORTPATH=/home/gsilva10/report/"$storage"_Report.txt
+		VFILERLISTPATH=/home/<USER>/tmp/"$storage"
+		REPORTPATH=/home/<USER>/report/"$storage"_Report.txt
 		
 		$ECHO "$storage"
         	$ECHO "##### $storage" > "$REPORTPATH"
