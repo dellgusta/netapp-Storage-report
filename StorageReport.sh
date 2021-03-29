@@ -21,7 +21,7 @@ do
 		REPORTPATH=/home/gsilva10/report/"$storage"_Report.txt
 		
 		$ECHO "$storage"
-        $ECHO "##### $storage" > "$REPORTPATH"
+        	$ECHO "##### $storage" > "$REPORTPATH"
 		$ECHOSPACE >> "$REPORTPATH"
 		
 		$ECHO "##### SYSCONFIG -A" >> "$REPORTPATH"
@@ -36,7 +36,7 @@ do
 		$SSH $storage aggr show_space >> "$REPORTPATH"
 		$ECHOSPACE >> "$REPORTPATH"
 		
-        $ECHO "##### DF -KV" >> "$REPORTPATH"
+        	$ECHO "##### DF -KV" >> "$REPORTPATH"
 		$SSH $storage df -kV >> "$REPORTPATH"
 		$ECHOSPACE >> "$REPORTPATH"
 		
@@ -53,19 +53,19 @@ do
 		$ECHOSPACE >> "$REPORTPATH"
 		
 		$ECHO "##### IGROUP SHOW" >> "$REPORTPATH"
-        $SSH $storage vfiler run "*" igroup show >> "$REPORTPATH"
-        $ECHOSPACE >> "$REPORTPATH"
+        	$SSH $storage vfiler run "*" igroup show >> "$REPORTPATH"
+        	$ECHOSPACE >> "$REPORTPATH"
 		
 		$ECHO "##### LUN SHOW -M" >> "$REPORTPATH"
-        $SSH $storage vfiler run "*" lun show -m >> "$REPORTPATH"
-        $ECHOSPACE >> "$REPORTPATH"
+        	$SSH $storage vfiler run "*" lun show -m >> "$REPORTPATH"
+        	$ECHOSPACE >> "$REPORTPATH"
 		
 		$ECHO "##### LUN SHOW -V" >> "$REPORTPATH"
-        $SSH $storage vfiler run "*" lun show -v >> "$REPORTPATH"
-        $ECHOSPACE >> "$REPORTPATH"
+        	$SSH $storage vfiler run "*" lun show -v >> "$REPORTPATH"
+        	$ECHOSPACE >> "$REPORTPATH"
 		
 		$ECHO "##### LUN STATS" >> "$REPORTPATH"
-        $SSH $storage vfiler run "*" lun stats -a >> "$REPORTPATH"
+        	$SSH $storage vfiler run "*" lun stats -a >> "$REPORTPATH"
 		$ECHOSPACE >> "$REPORTPATH"
 		
 		$ECHO "##### QTREE STATS" >> "$REPORTPATH"
