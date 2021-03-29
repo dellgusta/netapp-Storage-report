@@ -9,7 +9,7 @@ Requirements:
   -  TXT based file. Each line should contain a Storage device you want to collect information from. It can be the hostname or IP, depending on your "hosts" file;
 - Edit this part of the script to match your environment:
   ```
-  #DECLARANDO VARIAVEIS
+  #DECLARING VARIABLES
   SSH=/usr/bin/ssh
   ECHO=/bin/echo
   ECHOSPACE="echo """
