@@ -11,14 +11,14 @@
 SSH=/usr/bin/ssh
 ECHO=/bin/echo
 ECHOSPACE="echo """
-TEMPDIR=/root/ReportDSI/tmp
-STORAGELISTPATH=/root/ReportDSI/Storage_list
+TEMPDIR=/home/<USER>/tmp
+STORAGELISTPATH=/home/<USER>/Storage_list
 
 #FOR PARA COLETA DE INFORMAÇÕES E ARMAZENAMENTO EM ARQUIVO TXT
 for storage in `cat "$STORAGELISTPATH"`;
 do
 		VFILERLISTPATH="$TEMPDIR"/"$storage"
-		REPORTPATH=/root/ReportDSI/report/"$storage"_Report.txt
+		REPORTPATH=/home/<USER>/report/"$storage"_Report.txt
 		
 		$ECHO "$storage"
         	$ECHO "##### $storage" > "$REPORTPATH"
